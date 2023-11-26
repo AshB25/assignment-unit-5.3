@@ -1,4 +1,4 @@
-console.log('***** Music Collection *****')
+//console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
 
 myCollection = [];
@@ -18,7 +18,17 @@ addToCollection(myCollection, 'Selena LIVE! The Last Concert','Selena', 1993);
 addToCollection(myCollection,'Tori', 'Tori Kelly', 2023);
 addToCollection(myCollection, 'Musiq Soulchild', 'Victims & Villains', 2023);
 addToCollection(myCollection, 'The Age of Pleasure', 'Janelle Monae', 2023);
-console.log(myCollection);
+//console.log(myCollection);
+
+//SHOW COLLECTION
+function showCollection(collection){
+for (let i = 0; i < collection.length; i++) {
+  let album = collection[i];
+  let message = `${album.title}, by ${album.artist}, published in ${album.yearPublished}`
+  console.log(message);
+}
+}
+showCollection(myCollection);
 
 
 
