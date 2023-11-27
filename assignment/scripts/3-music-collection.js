@@ -30,6 +30,15 @@ for (let i = 0; i < collection.length; i++) {
 }
 showCollection(myCollection);
 
+//FIND BY ARTIST
+//take in collection and artist parameter
+function findByArtist(collection, artist){
+let byArtist = [];
+for (let i = 0; i < collection.length; i++){
+  
+}
+}
+
 
 
 
