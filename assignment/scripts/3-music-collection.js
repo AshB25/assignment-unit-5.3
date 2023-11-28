@@ -32,14 +32,23 @@ showCollection(myCollection);
 
 //FIND BY ARTIST
 //take in collection and artist parameter
-function findByArtist(collection, artist){
-let byArtist = [];
-for (let i = 0; i < collection.length; i++){
-  
-}
-}
 
+//console.log(artistList);
 
+const findByArtist = function (artist) {
+  console.log('list:', artistList);
+  let singerList = [];
+
+  for (let artistItem of artistList) {
+    
+    if (artistItem.artist === artist) {
+      console.log(artistItem);
+      singerList.push(artistItem);
+    }
+  }
+  return singerList;
+}
+findByArtist(myCollection, 'haim');
 
 
 
